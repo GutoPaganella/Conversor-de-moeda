@@ -64,5 +64,46 @@ function convertValues() {
 
 }
 
+function changeCurrency() {
+
+    const currencyName = document.getElementById("currency-name-converted")
+    const currencyImage = document.querySelector(".currency-img")
+    const currencyValue = document.getElementById("currency-value");
+    
+
+    if (currencySelect.value == "dolarUS$"){
+        currencyImage.src = "./assets/bandeiras/dolar.png"
+        currencyName.innerHTML = "Dólar Americano"
+    }
+
+    if (currencySelect.value == "euro"){
+        currencyImage.src = "./assets/bandeiras/euro.png"
+        currencyName.innerHTML = "Euro"
+    }
+
+    if (currencySelect.value == "dolarAU$"){
+        currencyImage.src = "./assets/bandeiras/australia.png"
+        currencyName.innerHTML = "Dólar Australiano"
+    }
+
+    if (currencySelect.value == "real"){
+        currencyImage.src = "./assets/bandeiras/real.png"
+        currencyName.innerHTML = "Real"
+    }
+
+    convertValues() // Aqui ele irá chamar a função anterior e fará a troca  de moeda conforme o valor do select.
+
+}
+
+
 
 convertButton.addEventListener("click", convertValues)
+
+// No evento a siguir, estamos mapeando o botão Enter do teclado, e com isso chamando a função de converção.
+document.addEventListener("keypress", function(e){
+    if(e.key === 'Enter')
+    convertValues()
+})
+
+currencySelectToConvert.addEventListener("change", changeCurrency)
+currencySelect.addEventListener("change",  changeCurrency)

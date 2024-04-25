@@ -33,10 +33,10 @@
             <label for="">
                 <p>Converter <b>para:</b></p>
                 <select id="select-converted">
-                    <option value="real">R$: Real Brasileiro</option>
                     <option value="dolarUS$">US$: Dólar Americano</option>
                     <option value="dolarAU$">AU$: Dólar Australiano</option>
                     <option value="euro">€: Euro</option>
+                    <option value="real">R$: Real Brasileiro</option>
                 </select>
             </label>
             
@@ -52,16 +52,16 @@
         <section>
             <div class="currency-box">
                 <img src="./assets/bandeiras/real.png" alt="Bandeira do Brasil" width="150px">
-                <p class="currency">Brasil.</p>
+                <p class="currency" id="Currency-name-convert">Brasil.</p>
                 <p class="currency-value-to-converted">R$: 1,00</p>
             </div>
 
             <img class="arrow-img" src="./assets/img/arrow2.png" alt="Seta de converção">
 
             <div class="currency-box">
-                <img src="./assets/bandeiras/dolar.png" alt="Bandeira do Brasil" width="150px">
-                <p class="currency">Dólar Americano.</p>
-                <p class="currency-value">USD $: 5,24</p>
+                <img class="currency-img" src="./assets/bandeiras/dolar.png" alt="Bandeira do Brasil" width="150px">
+                <p class="currency" id="currency-name-converted">Dólar Americano.</p>
+                <p class="currency-value" id="currency-value">USD $: 5,24</p>
             </div>
         </section>
         
