@@ -6,7 +6,7 @@
 }   
 
 body{
-    background-color: rgba(138, 81, 252, 1);
+    background-color: rgb(28, 158, 89);
 } 
 
 .logo{
@@ -17,10 +17,12 @@ body{
 }
 main{
     width: 400px;
+    border: 3px solid  #286b46;
     background: #f4f4f4;
     border-radius: 15px;
     margin: 0 auto;
     padding: 44px 24px 23px;
+    filter: drop-shadow(#156d46 3px 3px 6px);
 }
 
 h2{
@@ -53,7 +55,7 @@ select, input{
 }
 
 button{
-    background: #772fd3;
+    background: #156d46;
     border-radius: 5px;
     width: 100%;
     height: 40px;
@@ -73,7 +75,7 @@ button:active{
 }
 
 section{
-    border: 1px solid #772fd3;
+    border: 1.3px solid #156d46;
     border-radius: 15px;
     margin-top: 36px;
     display: flex;
